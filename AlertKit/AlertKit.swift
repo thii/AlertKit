@@ -130,6 +130,8 @@ extension UIViewController {
         showAlert(title, message: message, preferredStyle: .ActionSheet, alertActions: alertActions)
     }
 
+    // MARK: - Common
+
     /**
         Present an alert or action sheet with a title, a message and an array of handler actions.
 
