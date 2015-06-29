@@ -24,6 +24,26 @@ import UIKit
 
 extension UIViewController {
 
+    // MARK: - Alert Style
+
+    /**
+        Present a title-only alert controller and an OK button to dissmiss the alert.
+
+        :param: title The title of the alert.
+    */
+    public func showAlertWithTitle(title: String?) {
+        showAlert(title, message: nil, cancelButtonTitle: "OK")
+    }
+
+    /**
+        Present a message-only alert controller and an OK button to dissmiss the alert.
+
+        :param: message The message content of the alert.
+    */
+    public func showAlertWithMessage(message: String?) {
+        showAlert(nil, message: message, cancelButtonTitle: "OK")
+    }
+
     /**
         Present an alert controller with a title, a message and an OK button. Tap the OK button will dissmiss the alert.
 
@@ -55,6 +75,26 @@ extension UIViewController {
     */
     public func showAlert(title: String?, message: String?, alertActions: [UIAlertAction]) {
         showAlert(title, message: message, preferredStyle: .Alert, alertActions: alertActions)
+    }
+
+    // MARK: - Action Sheet Style
+
+    /**
+        Present a title-only action sheet and an OK button to dissmiss the alert.
+
+        :param: title The title of the action sheet.
+    */
+    public func showActionSheetWithTitle(title: String?) {
+        showActionSheet(title, message: nil, cancelButtonTitle: "OK")
+    }
+
+    /**
+        Present a message-only action sheet and an OK button to dissmiss the alert.
+
+        :param: message The message content of the action sheet.
+    */
+    public func showActionSheetWithMessage(message: String?) {
+        showActionSheet(nil, message: message, cancelButtonTitle: "OK")
     }
 
     /**
