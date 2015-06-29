@@ -26,7 +26,7 @@ extension UIViewController {
 
     /**
         Present an alert controller with a title, a message and an OK button. Tap the OK button will dissmiss the alert.
-        
+
         :param: title The title of the alert.
         :param: message The message content of the alert.
     */
@@ -36,7 +36,7 @@ extension UIViewController {
 
     /**
         Present an alert controller with a title, a message and a cancel/dismiss button with a title of your choice.
-        
+
         :param: title The title of the alert.
         :param: message The message content of the alert.
         :param: cancelButtonTitle Title of the cancel button of the alert.
@@ -56,7 +56,7 @@ extension UIViewController {
     public func showAlert(title: String?, message: String?, alertActions: [UIAlertAction]) {
         showAlert(title, message: message, preferredStyle: .Alert, alertActions: alertActions)
     }
-    
+
     /**
         Present an action sheet with a title, a message and an OK button. Tap the OK button will dissmiss the alert.
 
@@ -78,7 +78,7 @@ extension UIViewController {
         let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel, handler: nil)
         showActionSheet(title, message: message, alertActions: [cancelAction])
     }
-    
+
     /**
         Present an action sheet with a title, a message and an array of handler actions.
 
