@@ -1,5 +1,5 @@
 # AlertKit
-[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/BINList.svg)](https://img.shields.io/cocoapods/v/BINList.svg)
+[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/AlertKit.svg)](https://img.shields.io/cocoapods/v/AlertKit.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Alert with a single line of Swift.
