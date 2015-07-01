@@ -22,6 +22,9 @@
 
 import UIKit
 
+/**
+    Extension of UIViewController to conveniently show an alert or action sheet with a single line of code. Please note that these methods must be called from a UIViewController instance.
+*/
 extension UIViewController {
 
     // MARK: - Alert Style
@@ -130,7 +133,7 @@ extension UIViewController {
         showAlert(title, message: message, preferredStyle: .ActionSheet, alertActions: alertActions)
     }
 
-    // MARK: - Common
+    // MARK: - Common Methods
 
     /**
         Present an alert or action sheet with a title, a message and an array of handler actions.
