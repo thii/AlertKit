@@ -37,6 +37,10 @@ To integrate AlertKit into your Xcode project using Carthage, specify it in your
 github "AlertKit/AlertKit"
 ```
 
+## Usage
+
+See [documentation](http://cocoadocs.org/docsets/AlertKit/).
+
 ## License
 
 AlertKit is released under the MIT license. See LICENSE for details.
