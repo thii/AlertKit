@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "AlertKit"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "Alert with a single line of Swift."
   s.homepage         = "https://github.com/AlertKit/AlertKit"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
