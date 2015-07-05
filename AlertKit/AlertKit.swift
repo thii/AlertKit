@@ -44,7 +44,7 @@ extension UIViewController {
         :param: message The message content of the alert.
     */
     public func showAlertWithMessage(message: String?) {
-        showAlert(nil, message: message, cancelButtonTitle: "OK")
+        showAlert("", message: message, cancelButtonTitle: "OK")
     }
 
     /**
