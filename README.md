@@ -39,7 +39,21 @@ github "AlertKit/AlertKit"
 
 ## Usage
 
-See [documentation](http://cocoadocs.org/docsets/AlertKit/).
+Inside a UIViewController subclass:
+
+Present a title-only alert controller and an OK button to dissmiss the alert.
+
+```swift
+self.showAlert("Hey", message: "This is cool!")
+```
+
+Present a title-only action sheet and an OK button to dissmiss the alert.
+
+```swift
+self.showActionSheet("Hey", message: "This is cool too!")
+```
+
+See more at [documentation](http://cocoadocs.org/docsets/AlertKit/0.1.2/Extensions/UIViewController.html).
 
 ## License
 
