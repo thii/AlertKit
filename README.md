@@ -1,4 +1,5 @@
 # AlertKit
+[![Build Status](https://travis-ci.org/thii/AlertKit.svg?branch=master)](https://travis-ci.org/thii/AlertKit)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/AlertKit.svg)](https://img.shields.io/cocoapods/v/AlertKit.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
