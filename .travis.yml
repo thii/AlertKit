@@ -1,0 +1,17 @@
+language: objective-c
+osx_image: xcode7.3
+
+script:
+  - scan
+
+before_deploy:
+  - carthage build --no-skip-current
+  - carthage archive AlertKit
+
+deploy:
+  provider: releases
+  api_key:
+    secure: PZy7eHSDZ0xMUzqM8ak2bso3oX9Jj/jrA9RAxFuhiS196dqJEcKew61CsZPufzQi3TMxh6AxZ9K6ghZaprlkS+z5Pd3h9ezANupek+UVOmEbJ/OXpvESMAye6BtB7wiAt1gYOfodH6Lz1Lms5A+W279FjCLUf2EYvKBDwQ/l1UWeYFLnT7XZJvzSaDvvFmwRyEdYmM6CcXAVhvYd1PTudn3bNj24nrsOyYf39SUU9HrdYk64LFMESacAJcm4b2hQJe6l3CIFYHrK94jOJGf4+It4Clh0AUi+vq9xJ6rMJSrXrfQ7UXz5gEfFxTk5l1wL4S48KbCF0qbxkCKtqwUsYLvO6Dsy1IVoNoL8LncVeyYS863xJaUhUW9huiG3atbUIijc2CB6wy0hAS9WdK8ML70RLPNhiTO2mHrK2vA+7uljAjyylyInl4WMs95ddkFeXdBNL2Bb/W506UAqUktqH4VJ2ArVjTGkQ7v1N07ooPQ/57FKBKbsMwTyz2NLlOrhnAkRwBdL+QClBYrwvBbZoTEziAnuuqIde02b6SKhMQ34dv8/OQSgyFZO9dKgnFg49TcZnDCoLspjrWpVPskRUpMLed5xqHUbZSE3NL+u93pJPp57QNjvCfb8jf5ljYYj/KkmFx+yE/3PDe6Y2dz+TGuONtTMF86dZ3fV7XWU2gk=
+  file: AlertKit.framework.zip
+  on:
+    tags: true

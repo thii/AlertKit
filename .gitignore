@@ -21,3 +21,5 @@ DerivedData
 
 # Carthage
 Carthage/Build
+
+test_output
