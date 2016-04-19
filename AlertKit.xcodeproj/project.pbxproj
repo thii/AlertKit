@@ -161,6 +161,8 @@
 		842BD93D1B3DA10400B407B2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0630;
 				TargetAttributes = {
 					842BD9451B3DA10400B407B2 = {
@@ -405,6 +407,7 @@
 				842BD95E1B3DA10400B407B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		842BD95F1B3DA10400B407B2 /* Build configuration list for PBXNativeTarget "AlertKitTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +416,7 @@
 				842BD9611B3DA10400B407B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
