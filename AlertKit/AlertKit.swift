@@ -34,7 +34,7 @@ extension UIViewController {
 
         - parameter title: The title of the alert.
     */
-    public func showAlertWithTitle(title: String?) {
+    public func showAlertWithTitle(_ title: String?) {
         showAlert(title, message: nil, cancelButtonTitle: "OK")
     }
 
@@ -43,7 +43,7 @@ extension UIViewController {
 
         - parameter message: The message content of the alert.
     */
-    public func showAlertWithMessage(message: String?) {
+    public func showAlertWithMessage(_ message: String?) {
         showAlert("", message: message, cancelButtonTitle: "OK")
     }
 
@@ -53,7 +53,7 @@ extension UIViewController {
         - parameter title: The title of the alert.
         - parameter message: The message content of the alert.
     */
-    public func showAlert(title: String?, message: String?) {
+    public func showAlert(_ title: String?, message: String?) {
         showAlert(title, message: message, cancelButtonTitle: "OK")
     }
 
@@ -64,8 +64,8 @@ extension UIViewController {
         - parameter message: The message content of the alert.
         - parameter cancelButtonTitle: Title of the cancel button of the alert.
     */
-    public func showAlert(title: String?, message: String?, cancelButtonTitle: String) {
-        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel, handler: nil)
+    public func showAlert(_ title: String?, message: String?, cancelButtonTitle: String) {
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel, handler: nil)
         showAlert(title, message: message, alertActions: [cancelAction])
     }
 
@@ -76,8 +76,8 @@ extension UIViewController {
         - parameter message: The message content of the alert.
         - parameter alertActions: An array of alert action in UIAlertAction class.
     */
-    public func showAlert(title: String?, message: String?, alertActions: [UIAlertAction]) {
-        showAlert(title, message: message, preferredStyle: .Alert, alertActions: alertActions)
+    public func showAlert(_ title: String?, message: String?, alertActions: [UIAlertAction]) {
+        showAlert(title, message: message, preferredStyle: .alert, alertActions: alertActions)
     }
 
     // MARK: - Action Sheet Style
@@ -87,7 +87,7 @@ extension UIViewController {
 
         - parameter title: The title of the action sheet.
     */
-    public func showActionSheetWithTitle(title: String?) {
+    public func showActionSheetWithTitle(_ title: String?) {
         showActionSheet(title, message: nil, cancelButtonTitle: "OK")
     }
 
@@ -96,7 +96,7 @@ extension UIViewController {
 
         - parameter message: The message content of the action sheet.
     */
-    public func showActionSheetWithMessage(message: String?) {
+    public func showActionSheetWithMessage(_ message: String?) {
         showActionSheet(nil, message: message, cancelButtonTitle: "OK")
     }
 
@@ -106,7 +106,7 @@ extension UIViewController {
         - parameter title: The title of the action sheet.
         - parameter message: The message content of the action sheet.
     */
-    public func showActionSheet(title: String?, message: String?) {
+    public func showActionSheet(_ title: String?, message: String?) {
         showActionSheet(title, message: message, cancelButtonTitle: "OK")
     }
 
@@ -117,8 +117,8 @@ extension UIViewController {
         - parameter message: The message content of the action sheet.
         - parameter cancelButtonTitle: The title of the cancel button of the action sheet.
     */
-    public func showActionSheet(title: String?, message: String?, cancelButtonTitle: String) {
-        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel, handler: nil)
+    public func showActionSheet(_ title: String?, message: String?, cancelButtonTitle: String) {
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .cancel, handler: nil)
         showActionSheet(title, message: message, alertActions: [cancelAction])
     }
 
@@ -129,8 +129,8 @@ extension UIViewController {
         - parameter message: The message content of the action sheet.
         - parameter alertActions: An array of alert actions in UIAlertAction class.
     */
-    public func showActionSheet(title: String?, message: String?, alertActions: [UIAlertAction]) {
-        showAlert(title, message: message, preferredStyle: .ActionSheet, alertActions: alertActions)
+    public func showActionSheet(_ title: String?, message: String?, alertActions: [UIAlertAction]) {
+        showAlert(title, message: message, preferredStyle: .actionSheet, alertActions: alertActions)
     }
 
     // MARK: - Common Methods
@@ -142,13 +142,13 @@ extension UIViewController {
         - parameter message: The message content of the alert/action sheet.
         - parameter alertActions: An array of alert action in UIAlertAction class.
     */
-    public func showAlert(title: String?, message: String?, preferredStyle: UIAlertControllerStyle, alertActions: [UIAlertAction]) {
+    public func showAlert(_ title: String?, message: String?, preferredStyle: UIAlertControllerStyle, alertActions: [UIAlertAction]) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
 
         for alertAction in alertActions {
             alertController.addAction(alertAction)
         }
 
-        self.presentViewController(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
     }
 }
